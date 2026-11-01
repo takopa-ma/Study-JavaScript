@@ -1,19 +1,18 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>単語登録ノート</title>
+    <title>単語登録帳</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <main>
       <div class="title">
-        <h1>単語登録</h1>
+        <h1>単語登録帳</h1>
 
-        <button id="add-title">追加</button>
         <input id="main-title" type="text" placeholder="タイトルを書いてね" />
+        <button id="add-title">追加</button>
 
         <div>
           <label for="text-area">ここに詳細書いてね</label>
@@ -28,15 +27,19 @@
       </div>
 
       <div class="list-box">
+        <h1>単語一覧</h1>
         <ul id="title-area">
-          <li>
+          <!-- <li>
             <button id="click-text">追加されました</button
             ><input type="text" id="text-area-box" hidden />
-          </li>
+          </li> -->
         </ul>
       </div>
-      <div>
+      <div class="detail">
+        <h1>詳細</h1>
+        <label for="addtitle2">タイトル</label>
         <h2 id="addtitle2"></h2>
+        <label for="add-text">詳細</label>
         <p id="add-text"></p>
       </div>
     </main>
