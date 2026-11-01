@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>メモ帳</h1>
+
+        <button id="add-title">追加</button>
+        <input id="main-title" type="text" placeholder="タイトルを書いてね" />
+
+        <div>
+          <label for="text-area">ここに詳細書いてね</label>
+          <textarea
+            name="text-area"
+            id="text-area"
+            placeholder="詳細を書いてね"
+            rows="5"
+            cols="5"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="list-box">
+        <ul id="title-area">
+          <li>
+            <button id="click-text">追加されました</button
+            ><input type="text" id="text-area-box" hidden />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 id="addtitle2"></h2>
+        <p id="add-text"></p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
