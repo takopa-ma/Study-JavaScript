@@ -9,6 +9,7 @@ const additionTitle = document.getElementById('addtitle2');
 addTitle.addEventListener('click', () => {
   const textTitle = mainTitle.value;
   const textArea = textarea.value;
+
   console.log('タイトル', textTitle);
   console.log('詳細', textArea);
 
@@ -16,15 +17,23 @@ addTitle.addEventListener('click', () => {
     const list = document.createElement('li');
     titelarea.appendChild(list);
     const btn = document.createElement('button');
+
     list.appendChild(btn);
     btn.textContent = textTitle;
     const hiddenarea = document.createElement('input');
+    const deletebtn = document.createElement('button');
+    list.appendChild(deletebtn);
+    deletebtn.textContent = '削除';
+    deletebtn.className = 'DELETEBTN';
     list.appendChild(hiddenarea);
     hiddenarea.type = 'hidden';
     hiddenarea.value = textArea;
     btn.addEventListener('click', () => {
       additionTitle.textContent = btn.textContent;
       addText.textContent = hiddenarea.value;
+    });
+    deletebtn.addEventListener('click', () => {
+      list.remove();
     });
   }
 });
