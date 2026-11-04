@@ -15,4 +15,7 @@ https://www.udemy.com/course/sql_for_data_analytics/learn/lecture/35725782#annou
  where=絞り込み
  order by =ソート、並び替え
  limit = 表示じょうげんをきめれる
+insert=登録
+update=更新
+delet= 削除
  
